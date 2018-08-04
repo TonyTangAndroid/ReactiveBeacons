@@ -2,6 +2,7 @@
 
 ext {
     minSdkVersion = 21
+    targetSdkVersion = 22
     compileSdkVersion = 27
     buildToolsVersion = '27.0.3'
     gradleVersion = '4.5.1'
