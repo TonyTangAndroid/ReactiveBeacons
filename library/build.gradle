@@ -3,12 +3,12 @@ apply from: '../config/quality.gradle'
 apply from: '../maven_push.gradle'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 25
+        minSdkVersion 21
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -21,15 +21,15 @@ android {
 }
 
 dependencies {
-    compile deps.rxjava2
-    compile deps.supportannotations
+    api deps.rxjava2
+    api deps.supportannotations
 
-    testCompile deps.junit
-    testCompile deps.truth
-    testCompile deps.mockitocore
-    testCompile deps.mockitoandroid
+    testImplementation deps.junit
+    testImplementation deps.truth
+    testImplementation deps.mockitocore
+    testImplementation deps.mockitoandroid
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.4.1'
+    gradleVersion = '4.5.1'
 }
