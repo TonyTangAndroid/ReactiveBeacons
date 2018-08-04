@@ -19,6 +19,7 @@ android {
 
 dependencies {
   implementation deps.appcompatv7
+  implementation deps.recyclerview
   implementation deps.rxandroid2
   implementation project(':library')
 }
